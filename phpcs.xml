@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<ruleset name="FPCS">
+    <description>The FPCS coding standard.</description>
+
+    <rule ref="ImportDetection"/>
+    <rule ref="ImportDetection.Imports.RequireImports">
+        <properties>
+            <property name="ignoreUnimportedSymbols" value="/^(app_path|base_path|config_path|database_path|mix|public_path|resource_path|storage_path|__|class_basename|e|preg_replace_array|Str::after|Str::before|Str::camel|Str::contains|Str::endsWith|Str::finish|Str::is|Str::kebab|Str::limit|Str::orderedUuid|Str::plural|Str::random|Str::replaceArray|Str::replaceFirst|Str::replaceLast|Str::singular|Str::slug|Str::snake|Str::start|Str::startsWith|Str::studly|Str::title|Str::uuid|trans|trans_choice|action|asset|route|secure_asset|secure_url|url|abort|abort_if|abort_unless|app|auth|back|bcrypt|blank|broadcast|cache|class_uses_recursive|collect|config|cookie|csrf_field|csrf_token|dd|decrypt|dispatch|dispatch_now|dump|encrypt|env|event|factory|filled|info|logger|method_field|now|old|optional|policy|redirect|report|request|rescue|resolve|response|retry|session|tap|throw_if|throw_unless|today|trait_uses_recursive|transform|validator|value|view|with|object)$/"/>
+            <property name="ignoreGlobalsWhenInGlobalScope" value="true"/>
+        </properties>
+    </rule>
+
+    <rule ref="Squiz.Commenting.FunctionComment.Missing" />
+    <rule ref="Squiz.Commenting.FunctionComment.TypeHintMissing" />
+    <rule ref="Squiz.Commenting.FunctionCommentThrowTag" />
+    <rule ref="Squiz.Commenting.VariableComment" />
+
+    <arg name="extensions" value="php"/>
+    <exclude-pattern>vendor</exclude-pattern>
+
+    <arg name="colors"/>
+</ruleset>

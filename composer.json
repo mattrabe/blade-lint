@@ -1,0 +1,42 @@
+{
+    "name": "mattrabe/blade-lint",
+    "version": "0.0.1",
+    "type": "library",
+    "description": "Lint your Laravel Blade files.",
+    "keywords": ["laravel", "blade", "lint", "php"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matt Rabe",
+            "email": "matt@websolutionshack.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^5.5",
+        "symfony/yaml": "^4.3"
+    },
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+        "fpcs/php-coding-standard": "^1.0",
+        "phpunit/phpunit": "^7.5",
+        "symplify/easy-coding-standard": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MattRabe\\BladeLint\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MattRabe\\BladeLint\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MattRabe\\BladeLint\\BladeLintServiceProvider"
+            ]
+        }
+    }
+}

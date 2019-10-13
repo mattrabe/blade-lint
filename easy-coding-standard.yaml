@@ -1,0 +1,11 @@
+imports:
+    - { resource: 'vendor/symplify/easy-coding-standard/config/set/psr2.yaml' }
+    - { resource: 'vendor/symplify/easy-coding-standard/config/set/clean-code.yaml' }
+    - { resource: 'vendor/fpcs/php-coding-standard/easy-coding-standard/*.yaml' }
+
+parameters:
+    exclude_files:
+        - 'config/*'
+        - 'storage/*'
+        - 'vendor/*'
+        - '*/cache/*'
